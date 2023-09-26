@@ -51,3 +51,37 @@ here’s a simple way to decide: when you want to delete an item from a list
 and not use that item in any way, use the del statement; if you want to use an
 item as you remove it, use the pop() method.
 """
+#3-4
+guest_list = [ 'ab','bc','cd','de']
+print(f"Hello Mr.{guest_list[0].title()} . I would love to invite you over for a dinner")
+print(f"Hello Mr.{guest_list[1].title()} . I would love to invite you over for a dinner")
+print(f"Hello Mr.{guest_list[2].title()} . I would love to invite you over for a dinner")
+print(f"Hello Mr.{guest_list[3].title()} . I would love to invite you over for a dinner")
+#3-5
+#unavailable_guest = 'cd'
+#guest_list.remove(unavailable_guest)
+unavailable_guest = guest_list.pop(2)
+guest_list.insert(2,'ef')
+print(f"Mr. {unavailable_guest} won't be able to join the party instead Mr. {guest_list[2]} will be joining us")
+print("New Invitation")
+print(f"Hello Mr.{guest_list[0].title()} . I would love to invite you over for a dinner")
+print(f"Hello Mr.{guest_list[1].title()} . I would love to invite you over for a dinner")
+print(f"Hello Mr.{guest_list[2].title()} . I would love to invite you over for a dinner")
+print(f"Hello Mr.{guest_list[3].title()} . I would love to invite you over for a dinner")
+#3-6
+#rest is easy so leaving it
+
+
+cars = ['Bmw','audi','toyota','Subaru']
+"""There will be issue in sorting if all the values are not in same case(upper or lower)
+as it will sort according to the ASCII
+"""
+#there are two ways to sort this ----- 1) temporarily 2) permanently
+cars.sort() #this sorts it permanently
+print(cars)
+#also cars.sort(reverse= True) will sort it in descending
+
+print("Here is the temp sorting\n")
+print(sorted(cars))
+print("\nHere is the OG list")
+print(cars)
